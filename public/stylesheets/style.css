@@ -17,6 +17,7 @@
   width: 7em;
   height: 7em;
 }
+
 .navbar-brand {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -41,6 +42,7 @@ border-radius: 24px;
   text-align: center;
   font-family: Open Sans,Verdana;
   color: black;
+  margin-top: 6%;
 }
 
 /* Submissions entries area */
