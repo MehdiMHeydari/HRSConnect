@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include partials/head %> 
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+ 
+    <div class="container">
+      <fieldset>
+        <p>Please enter your email and password to register</p>
+        <form method='POST' action='/register'>
+         <!--<input name="email" type="email" class="ghost-input" placeholder="Email" required>
+          <input name="password" type="text" class="ghost-input" placeholder="Password" required>-->
+
+          <input type="email" name="email" class="ghost-input" placeholder="Email"  required>
+          <input id="pass" class="ghost-input" type="password" placeholder="Password" name="password" required>
+          <input id="pass2" class="ghost-input" type="password" placeholder="Re-Enter Your Password " name='verify' onchange="checkPass();" required>
+         <input type="submit" id="submitbutton" class="ghost-button"  value="Register" disabled>
+        </form>
+
+        <form method = 'GET' action="/login">
+            <input type='submit' class="ghost-transition" value="Already have an Account? Click here to login!"/>
+        </form>
+      </fieldset>
+    </div>
+          <script type="text/javascript">
+            function checkPass(){
+                
+                if(document.getElementById("pass").value == document.getElementById("pass2").value){
+                     document.getElementById("submitbutton").disabled = false;
+
+                }
+                else {
+                    document.getElementById("submitbutton").disabled = true;
+
+                }
+                
+            }
+        </script>
+  </body>
+</html>

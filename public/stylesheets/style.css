@@ -1,0 +1,186 @@
+/* Navigation bar */
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-family: Open Sans,Verdana;
+}
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -50px;
+  width: 7em;
+  height: 7em;
+}
+.navbar-brand {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 7em;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 25px;
+  letter-spacing: 5px;
+  font-family: Open Sans,Verdana;
+}
+.navbar-nav  li a:hover {
+  color: #1abc9c !important;
+}
+.active>a {
+color: #1abc9c !important;
+border-radius: 24px;
+}
+
+/* Contact Info */
+.contacts {
+  text-align: center;
+  font-family: Open Sans,Verdana;
+  color: black;
+}
+
+/* Submissions entries area */
+fieldset {
+  display: block;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-before: 0em;
+  -webkit-padding-start: 0em;
+  -webkit-padding-end: 0em;
+  -webkit-padding-after: 0em;
+  border: 0px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  min-width: -webkit-min-content;
+  font-family: Open Sans,Verdana;
+}
+
+/* Submission inputs */
+.ghost-input, p {
+  display: block;
+  font-weight:300;
+  width: 100%;
+  font-size: 20px;
+  border:0px;
+  outline: none;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #1abc9c;
+  background: #fff;
+  font-family: Open Sans,Verdana;
+  padding: 10px 15px;
+  margin: 30px 0px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.ghost-input:focus {
+  border-bottom:1px solid #ddd;
+}
+
+/* Submission button */
+.ghost-button {
+  background-color: transparent;
+  border:2px solid #ddd;
+  padding:10px 30px;
+  width: 40%;
+  min-width: 350px;
+  font-size: 25px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  border-radius: 25px;
+}
+.ghost-button:hover {
+  border:2px solid #1abc9c;
+}
+
+/* Buttons used to go between pages*/
+.ghost-transition{
+  margin-top: 50px ;
+  
+  width: 40%;
+  font-size: 100%;
+  background-color: transparent;
+  border:1px transparent;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  border-radius: 25px;
+}
+
+/* Box holding the divs (Listbox area) */
+.listbox-area {
+  padding: 20px;
+  background: #eee;
+  border: 1px solid #aaa;
+  font-size: 0;
+  font-family: Open Sans,Verdana
+}
+.left-area,
+.right-area {
+  font-size: 18px;
+  vertical-align: top;
+  padding: 5px; 
+}
+[role="listbox"] {
+  min-height: 18em;
+  padding: 7px;
+  background: white;
+  border: 1px solid #aaa;
+}
+
+/* Events */
+#title {
+  font-weight: 500;
+  font-size: 25px;
+}
+.event {
+  border-radius: 25px;
+  border: 4px solid #1abc9c;
+  padding: 20px; 
+  width: 28%;
+  height: 150px;
+  line-height: 1.2;
+  overflow: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 3%;
+  margin-top:1%;
+  margin-bottom: 1%;
+}
+
+/* Image on home page */
+.photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  padding-bottom: 20px;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+

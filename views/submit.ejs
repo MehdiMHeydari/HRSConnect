@@ -1,0 +1,31 @@
+<!-- Submissions page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <% include partials/head %>
+</head>
+
+<body>
+  <% include partials/menu %>
+
+  <!-- Submission inputs -->
+  <div class="container">
+    <h3>Submit an Event:</h3>
+    <fieldset>
+      <a href="https://calendar.google.com/calendar/b/1/r/eventedit" target=_blank>Click here to create a calendar entry for your event. Don't forget to "Add Google Meet video conferencing"!</a>
+      <form action="/submit" method="post">
+        <input name="name" type="text" class="ghost-input" placeholder="Name of Event" required>
+        <input name="date" type="text" class="ghost-input" placeholder="Date" required>
+        <input name="description" type="text" class="ghost-input" placeholder="Description" required>
+        <input name="link" type="url" class="ghost-input" placeholder="Calendar Event Link" required>
+        <input name="host" type="text" class="ghost-input" placeholder="Host" required>
+        <input type="submit" class="ghost-button" value="Submit Event">
+      </form>
+    </fieldset>
+  </div>
+
+</body>
+<% include partials/script %>
+
+</html>

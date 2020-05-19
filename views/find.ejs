@@ -1,0 +1,47 @@
+<!-- Find events html page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <% include partials/head %> 
+</head>
+
+<body>
+<% include partials/menu %>
+
+<!-- Event list -->
+<div class="listbox-area">
+  <div class="left-area">
+    <span id="title">
+      Events:
+    </span>
+    <ul class="event_list"
+        role="listbox">
+       <!-- Displays event information passed to it by Mehdi -->
+
+       <% events.forEach(function(evnt) { %>
+        <div class='event'>
+             <div class=“name”> Event Name: <%= evnt.name %>   </div>
+           <div class=“date”> Date: <%= evnt.date %>  </div>
+           <div class="description"> Description: <%= evnt.description %></div>
+            <div class=“link”>  Link: <%= evnt.link %> </div>
+             <div class=“host”> Host: <%= evnt.host %> </div>
+            </div>
+      <% }); %>
+
+        <!-- <% for( var i = 0; i < events.length; i++ ) { %>
+          <div class='event'>
+             <div class=“name”>  <%= events[i].name %>   </div>
+             <div class=“date”>  <%= events[i].date %>  </div>
+             <div class=“link” type="url"> <%= events[i].link %> </div>
+             <div class=“host”> <%= events[i].host %> </div>
+             <div class=“description”> <% events[i].description %></div>
+          </div>  
+          <% } %> -->
+          
+    </ul>
+  </div>
+</div>
+
+</body>
+<% include partials/script %>
+</html>
